@@ -1,0 +1,306 @@
+/* Article styles are scoped to keep the shared masthead and footer intact. */
+.laser-guide { --ink: #1b1b1b; --heading: #102c40; --muted: #555; --line: #d7d7d3; --paper: #faf9f7; --sans: 'DM Sans',Arial,sans-serif; --serif: Georgia,'Times New Roman',serif; }
+.laser-guide * { box-sizing: border-box; }
+html.laser-page { scroll-behavior: smooth; scroll-padding-top: 28px; }
+.laser-guide { margin: 0px; padding-bottom: 80px; background: var(--paper); color: var(--ink); font: 1.125rem/1.7 var(--sans); }
+.laser-guide a { color: inherit; text-underline-offset: 4px; }
+.laser-guide button, .laser-guide input { font: inherit; }
+.laser-guide button, .laser-guide summary, .laser-guide label { -webkit-tap-highlight-color: transparent; }
+.laser-guide button, .laser-guide summary { cursor: pointer; }
+.laser-guide button:focus-visible, .laser-guide a:focus-visible, .laser-guide summary:focus-visible, .laser-guide input:focus-visible { outline: rgb(43, 104, 76) solid 3px; outline-offset: 4px; }
+.laser-guide h1, .laser-guide h2, .laser-guide h3, .laser-guide p, .laser-guide figure, .laser-guide blockquote { margin: 0px; }
+.laser-guide h1, .laser-guide h2, .laser-guide h3 { color: var(--heading); font-family: var(--sans); font-style: normal; font-weight: 700; overflow-wrap: break-word; }
+.laser-guide h1 { font-size: clamp(2.7rem, 5vw, 4.25rem); line-height: 1.06; letter-spacing: -0.035em; text-wrap: balance; max-width: 1048px; }
+.laser-guide h2 { font-size: 2rem; line-height: 1.22; letter-spacing: -0.026em; margin-bottom: 22px; }
+.laser-guide .heading-highlight { color: inherit; background: linear-gradient(178deg, transparent 10%, rgb(255, 231, 104) 12%, rgb(255, 231, 104) 86%, transparent 88%); padding: 0px 0.07em; margin: 0px -0.07em; -webkit-box-decoration-break: clone; box-decoration-break: clone; border-radius: 0.05em 0.15em 0.08em 0.04em; }
+.laser-guide h3 { font-size: 1.375rem; line-height: 1.32; letter-spacing: -0.014em; margin-bottom: 10px; }
+.laser-guide p { margin-bottom: 20px; overflow-wrap: break-word; }
+.laser-guide img { display: block; max-width: 100%; height: auto; }
+.laser-guide [hidden] { display: none !important; }
+.laser-guide .sr-only { position: absolute; width: 1px; height: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; }
+.laser-guide .skip-link { position: absolute; top: -100px; left: 15px; z-index: 100; padding: 10px; background: rgb(255, 255, 255); }
+.laser-guide .skip-link:focus { top: 10px; }
+.laser-guide .masthead { max-width: 1112px; min-height: 88px; margin: auto; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 2px solid var(--ink); }
+.laser-guide .wordmark { font: 700 1.75rem/1.25 var(--serif); letter-spacing: -0.035em; text-decoration: none; }
+.laser-guide .header-link { font-size: 0.875rem; font-weight: 600; white-space: nowrap; }
+.laser-guide .page { max-width: 1112px; margin: auto; padding: 0px 32px; }
+.laser-guide .hero { padding: 22px 0px 48px; border-bottom: 1px solid var(--line); }
+.laser-guide .hero-layout { display: block; }
+.laser-guide .hero-story { min-width: 0px; }
+.laser-guide .hero-dek { max-width: 1000px; color: rgb(104, 125, 134); font-size: 1.625rem; line-height: 1.5; margin: 26px 0px 0px; }
+.laser-guide .hero-product { min-width: 0px; max-width: 870px; display: grid; grid-template-columns: 230px 1fr; gap: 32px; align-items: center; margin-top: 35px; }
+.laser-guide .hero-product > img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.laser-guide .hero-product-copy { min-width: 0px; }
+.laser-guide .article-byline { display: flex; align-items: center; gap: 20px; margin-top: 28px; }
+.laser-guide .author-avatar { display: flex; align-items: center; justify-content: center; flex: 0 0 64px; width: 64px; height: 64px; border-radius: 50%; background: rgb(223, 223, 223); color: rgb(85, 85, 85); font: 700 1.125rem/1 var(--serif); }
+.laser-guide .author-info { min-width: 0px; }
+.laser-guide .author-info p { margin: 0px; font-family: var(--serif); line-height: 1.4; }
+.laser-guide .author-name { color: rgb(34, 45, 67); font-size: 1.375rem; }
+.laser-guide .author-name strong { font-weight: 700; }
+.laser-guide .author-name > span { font-weight: 400; }
+.laser-guide .author-date, .laser-guide .author-read { color: rgb(90, 90, 90); font-size: 1.0625rem; }
+.laser-guide .hero-product h2 { font-size: 1.5625rem; margin-bottom: 7px; }
+.laser-guide .hero-product p { font-size: 0.9375rem; line-height: 1.55; margin-bottom: 13px; }
+.laser-guide .hero-product .product-spec { color: var(--muted); font-size: 0.8125rem; }
+.laser-guide .hero-product .button { width: auto; }
+.laser-guide .button { display: inline-flex; align-items: center; justify-content: center; gap: 25px; min-height: 50px; padding: 14px 22px; border: 1px solid transparent; border-radius: 999px; background: linear-gradient(100deg, rgb(255, 75, 0) 0%, rgb(255, 149, 0) 100%); color: rgb(255, 255, 255); text-decoration: none; font: 700 .9375rem/1.4 var(--sans); text-align: center; }
+.laser-guide .button:hover { background: linear-gradient(100deg, rgb(237, 69, 0) 0%, rgb(237, 137, 0) 100%); }
+.laser-guide .header-link.button { min-height: 44px; padding: 10px 18px; font-size: 0.875rem; }
+.laser-guide .button > span[aria-hidden] { font-size: 1.25rem; line-height: 1; }
+.laser-guide .article-body { max-width: 704px; margin: 0px auto; }
+.laser-guide .article-body section { margin-top: 54px; }
+.laser-guide .article-body > section:first-child { margin-top: 48px; }
+.laser-guide .article-body p:last-child { margin-bottom: 0px; }
+.laser-guide .doctor-explanation { display: grid; grid-template-columns: 125px 1fr; gap: 26px; align-items: center; padding: 26px 0px; margin: 27px 0px; border-block: 1px solid var(--line); }
+.laser-guide .doctor-explanation > img { width: 100%; aspect-ratio: 0.86 / 1; object-fit: cover; object-position: center top; background: rgb(242, 242, 240); }
+.laser-guide .doctor-explanation blockquote p { font: 700 1.25rem/1.45 var(--serif); letter-spacing: -0.01em; margin-bottom: 13px; }
+.laser-guide .doctor-explanation footer { font: .8125rem/1.6 var(--sans); }
+.laser-guide .doctor-explanation footer strong, .laser-guide .doctor-explanation footer span { display: block; }
+.laser-guide .doctor-explanation footer span { color: var(--muted); }
+.laser-guide .visual-reservation { margin: 29px 0px 0px; }
+.laser-guide .treatment-photo { max-width: 520px; margin-inline: auto; }
+.laser-guide .treatment-photo > img { width: 100%; height: auto; }
+.laser-guide .daily-serving-photo { max-width: 560px; margin-inline: auto; }
+.laser-guide .daily-serving-photo > img { width: 100%; height: auto; }
+.laser-guide .visual-frame { width: 100%; aspect-ratio: 16 / 9; border: 1px solid rgb(222, 221, 215); background: rgb(244, 243, 239); }
+.laser-guide .visual-reservation--wide .visual-frame { aspect-ratio: 2 / 1; }
+.laser-guide .visual-reservation figcaption { font: .8125rem/1.6 var(--sans); color: var(--muted); margin-top: 10px; max-width: 620px; }
+.laser-guide .visual-reservation + p { margin-top: 24px; }
+.laser-guide .sp-loop svg { display: block; width: 100%; height: auto; border-radius: 14px; font-family: var(--sans); }
+.laser-guide .sp-lbl { font-size: 21px; font-weight: 500; }
+.laser-guide .sp-k { font-size: 14px; font-weight: 700; letter-spacing: 0.14em; }
+.laser-guide .sp-loop-labels { display: none; }
+.laser-guide .sp-loop-controls { display: flex; justify-content: flex-end; }
+.laser-guide .sp-loop-controls button { min-height: 44px; padding: 8px 0px 0px 12px; border: 0px; background: none; color: var(--heading); font-size: 0.8125rem; text-decoration: underline; text-underline-offset: 4px; }
+.laser-guide .sp-loop-figure figcaption { margin-top: 4px; }
+@media (max-width: 600px) {
+.laser-guide .sp-loop svg > text { display: none; }
+.laser-guide .sp-loop-labels { display: grid; gap: 8px; margin: 12px 0px 0px; font-size: 0.875rem; line-height: 1.5; }
+.laser-guide .sp-loop-labels > div { display: grid; grid-template-columns: 58px minmax(0px, 1fr); gap: 10px; }
+.laser-guide .sp-loop-labels dt { color: var(--heading); font-weight: 700; }
+.laser-guide .sp-loop-labels dd { margin: 0px; }
+}
+.laser-guide .video-feature h2 { text-wrap: balance; }
+.laser-guide .interview-video { display: block; width: min(100%, 380px); height: auto; aspect-ratio: 9 / 16; margin-inline: auto; background: rgb(24, 27, 27); }
+.laser-guide .aftercare-list { margin: 0px 0px 25px; padding-left: 26px; }
+.laser-guide .aftercare-list li { padding-left: 7px; margin: 0px 0px 21px; }
+.laser-guide .aftercare-list li::marker { font-weight: 600; }
+.laser-guide .aftercare-list li > strong { display: block; }
+.laser-guide .aftercare-list li p { margin: 4px 0px 0px; }
+.laser-guide .founder-feature { display: grid; grid-template-columns: 1fr 1.08fr; align-items: center; gap: 54px; padding: 40px 0px; margin-top: 54px; border-block: 1px solid var(--line); }
+.laser-guide .founder-copy, .laser-guide .founders { min-width: 0px; }
+.laser-guide .founder-heading { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 22px; }
+.laser-guide .founder-heading h2 { min-width: 0px; margin: 0px; }
+.laser-guide .founder-icon { width: 48px; height: 48px; flex: 0 0 48px; }
+.laser-guide .founder-copy h2 { font-size: 1.9375rem; }
+.laser-guide .founder-copy p { font-size: 1rem; }
+.laser-guide .founders { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.laser-guide .founders figure { min-width: 0px; }
+.laser-guide .founders img { width: 100%; aspect-ratio: 0.91 / 1; object-fit: cover; object-position: center top; background: rgb(244, 243, 240); }
+.laser-guide .founders figcaption { font: .9375rem/1.5 var(--sans); padding-top: 13px; overflow-wrap: anywhere; }
+.laser-guide .founders figcaption strong, .laser-guide .founders figcaption span { display: block; }
+.laser-guide .founders figcaption span { font-size: 0.8125rem; color: var(--muted); margin-top: 5px; }
+.laser-guide .recommendation-section { margin-top: 54px; padding-bottom: 12px; }
+.laser-guide .recommendation-section > h2 { max-width: 780px; margin-bottom: 30px; text-wrap: balance; }
+.laser-guide .recommendation-list { display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 0px 42px; list-style: none; margin: 0px; padding: 0px; }
+.laser-guide .recommendation-list > li { display: grid; grid-template-columns: 48px minmax(0px, 1fr); align-items: start; gap: 18px; padding: 26px 0px 28px; border-top: 1px solid var(--line); }
+.laser-guide .recommendation-icon { width: 48px; height: 48px; }
+.laser-guide .recommendation-list h3 { font-size: 1.25rem; line-height: 1.35; margin: 0px 0px 9px; }
+.laser-guide .recommendation-list p { font-size: 1rem; line-height: 1.65; margin: 0px; }
+.laser-guide .ingredient { display: grid; grid-template-columns: 96px minmax(0px, 1fr); gap: 12px 22px; margin: 0px; padding: 24px 0px 22px; border-top: 1px solid var(--line); }
+.laser-guide .ingredient-image { grid-row: span 2; align-self: start; width: 96px; height: 96px; object-fit: contain; }
+.laser-guide .ingredient-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 22px; min-width: 0px; }
+.laser-guide .ingredient-heading h3 { margin: 0px; }
+.laser-guide .ingredient-heading > span { font: .8125rem/1.4 var(--sans); white-space: nowrap; color: var(--muted); }
+.laser-guide .ingredient p { grid-column: 2; font-size: 1.0625rem; margin-bottom: 0px; }
+.laser-guide .remaining-ingredients { margin: 2px 0px 22px; font-size: 1rem; }
+.laser-guide .dark-spot-result { margin: 32px 0px 0px; padding-top: 28px; border-top: 1px solid var(--line); }
+.laser-guide .dark-spot-result h3 { font-size: 1.75rem; margin-bottom: 18px; }
+.laser-guide .dark-spot-result > img { width: 100%; height: auto; }
+.laser-guide .dark-spot-result figcaption { color: var(--muted); font: .8125rem/1.6 var(--sans); margin-top: 10px; }
+.laser-guide .formula-conclusion { margin: 24px 0px 22px; }
+.laser-guide .fine, .laser-guide .caption { color: var(--muted); font: .875rem/1.65 var(--sans); }
+.laser-guide details { border-top: 1px solid var(--line); }
+.laser-guide details:last-child { border-bottom: 1px solid var(--line); }
+.laser-guide summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 19px 0px; font: 600 1rem/1.5 var(--sans); }
+.laser-guide summary::-webkit-details-marker { display: none; }
+.laser-guide summary > span { flex: 0 0 20px; font-size: 1.375rem; line-height: 1; text-align: center; }
+.laser-guide details[open] > summary > span { transform: rotate(45deg); }
+.laser-guide .details-content { padding-bottom: 21px; }
+.laser-guide .details-content p:last-child { margin-bottom: 0px; }
+.laser-guide .formula-details { border-bottom: 1px solid var(--line); }
+.laser-guide .details-content table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; margin: 16px 0px; }
+.laser-guide th, .laser-guide td { text-align: left; padding: 11px 0px; border-bottom: 1px solid var(--line); }
+.laser-guide th:last-child, .laser-guide td:last-child { text-align: right; padding-left: 16px; white-space: nowrap; }
+.laser-guide th { font-weight: 600; }
+.laser-guide .text-link { font-weight: 600; font-size: 0.9375rem; }
+.laser-guide .reviews { margin-top: 54px; min-width: 0px; }
+.laser-guide .reviews-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 14px; }
+.laser-guide .reviews-heading h2 { margin: 0px; }
+.laser-guide .review-arrows { display: flex; gap: 8px; flex-shrink: 0; }
+.laser-guide .review-arrows button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0px; border: 1px solid rgb(191, 196, 197); border-radius: 50%; color: var(--heading); background: transparent; font-size: 1.375rem; }
+.laser-guide .review-arrows button:hover:not(:disabled) { background: rgb(234, 240, 241); border-color: var(--heading); }
+.laser-guide .review-arrows button:disabled { opacity: 0.3; cursor: default; }
+.laser-guide .review-track { display: flex; gap: 16px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: 4px; scrollbar-width: none; list-style: none; margin: 0px; padding: 10px 4px 20px; }
+.laser-guide .review-track::-webkit-scrollbar { display: none; }
+.laser-guide .review-track::after { content: ""; flex: 0 0 24px; }
+.laser-guide .review-track:focus-visible { outline: rgb(43, 104, 76) solid 3px; outline-offset: 3px; }
+.laser-guide .review-card { flex: 0 0 calc(100% - 40px); min-width: 0px; min-height: 258px; display: flex; flex-direction: column; scroll-snap-align: start; padding: 28px; background: rgb(255, 255, 255); border: 1px solid rgb(232, 232, 229); border-radius: 20px; box-shadow: rgba(23, 40, 46, 0.07) 0px 5px 12px; }
+.laser-guide .review-quote { margin: 0px 0px 26px; font-size: 1.25rem; font-weight: 500; line-height: 1.55; }
+.laser-guide .review-quote p { margin: 0px; }
+.laser-guide .review-full, .laser-guide .review-full:last-child { border: 0px; margin-top: auto; }
+.laser-guide .review-full > summary { min-height: 44px; justify-content: flex-start; gap: 8px; padding: 8px 0px; color: var(--heading); font-size: 0.875rem; }
+.laser-guide .review-full > summary > span { flex: initial; font-size: inherit; line-height: 1.5; text-align: left; text-decoration: underline; text-underline-offset: 4px; transform: none; }
+.laser-guide .review-full[open] > summary > span { transform: none; }
+.laser-guide .review-full > summary > svg { flex-shrink: 0; }
+.laser-guide .review-full[open] > summary > svg { transform: rotate(180deg); }
+.laser-guide .review-read-less, .laser-guide .review-full[open] .review-read-more { display: none; }
+.laser-guide .review-full[open] .review-read-less { display: inline; }
+.laser-guide .review-full-quote { margin: 12px 0px 0px; font-size: 1rem; font-weight: 400; line-height: 1.65; }
+.laser-guide .review-full-quote p { margin: 0px 0px 1em; }
+.laser-guide .review-full-quote p:last-child { margin-bottom: 0px; }
+.laser-guide .review-pagination { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.laser-guide .review-pagination p { margin: 0px; color: var(--muted); font-size: 0.8125rem; }
+.laser-guide .review-counter { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.laser-guide .review-dots { display: flex; align-items: center; gap: 0px; }
+.laser-guide .review-dots button { display: grid; place-items: center; min-width: 36px; height: 44px; padding: 0px; border: 0px; background: transparent; }
+.laser-guide .review-dots span { width: 7px; height: 7px; background: rgb(196, 201, 202); border-radius: 50%; }
+.laser-guide .review-dots [aria-current="true"] span { width: 20px; border-radius: 5px; background: var(--heading); }
+.laser-guide .product-cta { margin-top: 48px; padding: 34px 0px; border-block: 1px solid var(--ink); }
+.laser-guide .product-cta .button { margin-top: 4px; }
+.laser-guide .store-note { color: var(--muted); font-size: 0.8125rem; margin: 13px 0px 0px; }
+.laser-guide .site-footer { max-width: 1112px; padding: 22px 32px; margin: auto; border-top: 1px solid var(--line); }
+.laser-guide .site-footer .wordmark { font-size: 1.25rem; }
+.laser-guide .site-footer p { font-size: 0.8125rem; color: var(--muted); margin: 10px 0px 0px; }
+.laser-guide .sticky-offer { position: fixed; bottom: 0px; left: 0px; right: 0px; z-index: 40; padding: 12px max(24px, -524px + 50vw); border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 20px; background: var(--paper); }
+.laser-guide .sticky-offer strong { font-size: 0.9375rem; display: block; }
+.laser-guide .sticky-offer > div > span { color: var(--muted); font-size: 0.8125rem; display: block; }
+.laser-guide .sticky-offer .button { min-height: 44px; font-size: 0.875rem; }
+@media (max-width: 900px) {
+.laser-guide h1 { font-size: 3.5rem; }
+.laser-guide .hero-dek { font-size: 1.4375rem; }
+.laser-guide .hero-product > img { aspect-ratio: 1 / 1; }
+.laser-guide .founder-feature { gap: 30px; }
+.laser-guide .founder-copy h2 { font-size: 1.6875rem; }
+}
+@media (max-width: 700px) {
+.laser-guide { font-size: 1.0625rem; line-height: 1.7; }
+.laser-guide .masthead { padding: 17px 20px; min-height: 69px; gap: 12px; }
+.laser-guide .wordmark { font-size: 1.4rem; }
+.laser-guide .header-link { display: none; }
+.laser-guide .page { padding: 0px 20px; }
+.laser-guide .hero { padding: 16px 0px 30px; }
+.laser-guide .disclosure { font-size: 0.75rem; margin-bottom: 19px; }
+.laser-guide .hero-story { padding: 0px; }
+.laser-guide h1 { font-size: 2.4375rem; line-height: 1.08; letter-spacing: -0.03em; }
+.laser-guide h2 { font-size: 1.75rem; margin-bottom: 20px; }
+.laser-guide h3 { font-size: 1.25rem; }
+.laser-guide .hero-dek { font-size: 1.1875rem; line-height: 1.5; margin: 20px 0px 0px; }
+.laser-guide .hero-product { display: grid; grid-template-columns: 114px 1fr; gap: 0px 17px; margin-top: 27px; padding-top: 23px; border-top: 1px solid var(--line); align-items: start; }
+.laser-guide .hero-product > img { aspect-ratio: 1 / 1; width: 100%; object-fit: cover; }
+.laser-guide .hero-product-copy { display: contents; }
+.laser-guide .hero-product h2, .laser-guide .hero-product p { grid-column: 2; }
+.laser-guide .hero-product > img { grid-row: 1 / 4; }
+.laser-guide .hero-product h2 { font-size: 1.375rem; margin-bottom: 7px; }
+.laser-guide .hero-product p { font-size: 0.8125rem; margin-bottom: 8px; }
+.laser-guide .hero-product .product-spec { font-size: 0.75rem; margin-bottom: 0px; }
+.laser-guide .hero-product .button { width: 100%; grid-column: 1 / -1; margin-top: 18px; }
+.laser-guide .article-byline { gap: 13px; margin-top: 23px; }
+.laser-guide .author-avatar { flex-basis: 46px; width: 46px; height: 46px; font-size: 0.875rem; }
+.laser-guide .author-name { font-size: 1rem; }
+.laser-guide .author-date, .laser-guide .author-read { font-size: 0.8125rem; }
+.laser-guide .article-body section, .laser-guide .article-body > section:first-child { margin-top: 37px; }
+.laser-guide .doctor-explanation { gap: 19px; grid-template-columns: 86px 1fr; padding: 22px 0px; margin: 24px 0px; align-items: start; }
+.laser-guide .doctor-explanation > img { aspect-ratio: 0.72 / 1; }
+.laser-guide .doctor-explanation blockquote p { font-size: 1.125rem; }
+.laser-guide .doctor-explanation footer { font-size: 0.75rem; }
+.laser-guide .visual-frame, .laser-guide .visual-reservation--wide .visual-frame { aspect-ratio: 4 / 3; }
+.laser-guide .visual-reservation { margin-top: 25px; }
+.laser-guide .visual-reservation figcaption { font-size: 0.75rem; }
+.laser-guide .aftercare-list { padding-left: 22px; }
+.laser-guide .founder-feature { grid-template-columns: 1fr; gap: 26px; padding: 29px 0px; margin-top: 37px; }
+.laser-guide .founder-copy h2 { font-size: 1.75rem; }
+.laser-guide .founders { gap: 16px; }
+.laser-guide .founders img { aspect-ratio: 0.97 / 1; }
+.laser-guide .founders figcaption { font-size: 0.875rem; }
+.laser-guide .founders figcaption span { font-size: 0.75rem; }
+.laser-guide .recommendation-section { margin-top: 37px; padding-bottom: 0px; }
+.laser-guide .recommendation-section > h2 { margin-bottom: 23px; }
+.laser-guide .recommendation-list { grid-template-columns: 1fr; }
+.laser-guide .recommendation-list > li { grid-template-columns: 42px minmax(0px, 1fr); gap: 15px; padding: 22px 0px; }
+.laser-guide .recommendation-icon { width: 42px; height: 42px; }
+.laser-guide .recommendation-list h3 { font-size: 1.1875rem; margin-bottom: 8px; }
+.laser-guide .recommendation-list p { font-size: 1rem; }
+.laser-guide .ingredient { grid-template-columns: 64px minmax(0px, 1fr); gap: 14px; padding: 21px 0px; }
+.laser-guide .ingredient-image { grid-row: auto; width: 64px; height: 64px; }
+.laser-guide .ingredient-heading { display: block; }
+.laser-guide .ingredient-heading h3 { font-size: 1.1875rem; }
+.laser-guide .ingredient-heading > span { display: block; margin-top: 6px; font-size: 0.75rem; }
+.laser-guide .ingredient p { grid-column: 1 / -1; font-size: 1rem; }
+.laser-guide .dark-spot-result { margin-top: 26px; padding-top: 24px; }
+.laser-guide .dark-spot-result h3 { font-size: 1.5rem; }
+.laser-guide .dark-spot-result .result-timing { margin-bottom: 15px; }
+.laser-guide .formula-conclusion { margin-top: 23px; }
+.laser-guide #ingredients > .button { width: 100%; }
+.laser-guide .reviews { margin-top: 37px; }
+.laser-guide .reviews-heading { gap: 10px; }
+.laser-guide .reviews-heading h2 { font-size: 1.625rem; }
+.laser-guide .review-arrows { gap: 6px; }
+.laser-guide .review-card { padding: 22px; min-height: 270px; border-radius: 18px; }
+.laser-guide .review-quote { font-size: 1.125rem; }
+.laser-guide .review-dots button { min-width: 30px; }
+.laser-guide .product-cta { margin-top: 37px; padding: 29px 0px; }
+.laser-guide .product-cta .button { width: 100%; }
+.laser-guide .product-link { gap: 13px; }
+.laser-guide .sticky-offer { padding: 11px 16px; gap: 12px; }
+.laser-guide .sticky-offer strong { font-size: 0.8125rem; }
+.laser-guide .sticky-offer > div > span { font-size: 0.6875rem; }
+.laser-guide .sticky-offer .button { font-size: 0.8125rem; padding: 11px 14px; gap: 8px; }
+.laser-guide .sticky-offer .button > span { display: none; }
+.laser-guide summary { font-size: 0.9375rem; gap: 14px; }
+.laser-guide .site-footer { padding: 20px; }
+}
+@media (max-width: 360px) {
+.laser-guide .page { padding: 0px 17px; }
+.laser-guide h1 { font-size: 2.125rem; }
+.laser-guide .hero-product { grid-template-columns: 95px 1fr; gap: 0px 14px; }
+.laser-guide .hero-product > img { aspect-ratio: 1 / 1; }
+.laser-guide .sticky-offer > div > span { display: none; }
+.laser-guide .ingredient-heading { flex-wrap: wrap; gap: 5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+html.laser-page { scroll-behavior: auto; }
+}
+@media print {
+.laser-guide .sticky-offer, .laser-guide .header-link, .laser-guide .button { display: none !important; }
+.laser-guide { padding: 0px; }
+.laser-guide .page { max-width: 100%; }
+.laser-guide .founders, .laser-guide .doctor-explanation { break-inside: avoid; }
+}
+@media print {
+.laser-guide .review-track { display: block; overflow: visible; }
+.laser-guide .review-card { margin: 15px 0px; break-inside: avoid; box-shadow: none; }
+.laser-guide .review-arrows, .laser-guide .review-pagination { display: none !important; }
+}
+/* Only this route loads these shell adjustments. Shared site files stay unchanged. */
+html.laser-page { scroll-padding-top: 78px; }
+.laser-page .masthead__logo { text-decoration: none; }
+.laser-page .sticky-nav__links { min-width: 0; }
+.laser-page .sticky-nav__cta { background: linear-gradient(100deg, #ff4b00, #ff9500); }
+.laser-page .sticky-nav__cta:focus-visible, .laser-page .sticky-nav__link:focus-visible, .laser-page .masthead__logo:focus-visible { outline: 3px solid #2b684c; outline-offset: 3px; }
+.laser-guide { padding-bottom: 0; }
+.laser-guide .skip-link { position: fixed; }
+@media print { .laser-page .sticky-nav { display: none; } }
+
+.laser-page .journal-skip-link { position: fixed; top: -100px; left: 15px; z-index: 101; padding: 10px; background: #fff; color: #102c40; }
+.laser-page .journal-skip-link:focus { top: 10px; outline: 3px solid #2b684c; outline-offset: 3px; }
+
+/* Supplied publication masthead; the source artwork stays unchanged. */
+.laser-page .masthead { padding: 10px 24px; background: #faf6eb; }
+.laser-page .masthead__inner { align-items: center; justify-content: center; }
+.laser-page .masthead__logo { display: block; width: min(100%, 390px); aspect-ratio: 3.7; overflow: hidden; }
+.laser-page .masthead__brand-image { display: block; width: 100%; height: auto; transform: translateY(-17%); }
+@media (max-width: 600px) {
+  .laser-page .masthead { padding: 8px 20px; }
+  .laser-page .masthead__logo { width: min(100%, 310px); }
+}
