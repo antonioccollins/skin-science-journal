@@ -296,11 +296,11 @@ html.laser-page { scroll-padding-top: 78px; }
 .laser-page .journal-skip-link:focus { top: 10px; outline: 3px solid #2b684c; outline-offset: 3px; }
 
 /* Supplied publication masthead; the source artwork stays unchanged. */
-.laser-page .masthead { padding: 10px 24px; background: #faf6eb; }
+.laser-page .masthead { padding: 8px 24px; background: #faf6eb; }
 .laser-page .masthead__inner { align-items: center; justify-content: center; }
-.laser-page .masthead__logo { display: block; width: min(100%, 390px); aspect-ratio: 3.7; overflow: hidden; }
+.laser-page .masthead__logo { display: block; width: min(100%, 260px); aspect-ratio: 3.7; overflow: hidden; }
 .laser-page .masthead__brand-image { display: block; width: 100%; height: auto; transform: translateY(-17%); }
 @media (max-width: 600px) {
-  .laser-page .masthead { padding: 8px 20px; }
-  .laser-page .masthead__logo { width: min(100%, 310px); }
+  .laser-page .masthead { padding: 6px 20px; }
+  .laser-page .masthead__logo { width: min(100%, 220px); }
 }
